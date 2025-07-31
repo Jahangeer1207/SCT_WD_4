@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do Web App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>📝 SkillCraft To-Do Web App</h1>
+      <button id="themeToggle">🌙</button>
+    </header>
+
+    <main>
+      <div class="task-input">
+        <input type="text" id="taskInput" placeholder="Enter a new task..." />
+        <input type="datetime-local" id="taskDateTime" />
+        <select id="categorySelect">
+          <option value="Work">Work</option>
+          <option value="Personal">Personal</option>
+          <option value="Study">Study</option>
+        </select>
+        <button id="addTaskBtn">Add Task</button>
+      </div>
+
+      <div class="categories">
+        <div class="category" data-category="Work">
+          <h2>💼 Work</h2>
+          <ul id="workTasks" class="task-list"></ul>
+        </div>
+        <div class="category" data-category="Personal">
+          <h2>🏡 Personal</h2>
+          <ul id="personalTasks" class="task-list"></ul>
+        </div>
+        <div class="category" data-category="Study">
+          <h2>📚 Study</h2>
+          <ul id="studyTasks" class="task-list"></ul>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
